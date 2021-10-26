@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <NextNProgress color={blue[500]} height={4} />
-      {isMobile ? <Mobile /> : <Component {...pageProps} />}
+      <Component {...pageProps} />
     </>
   );
 }

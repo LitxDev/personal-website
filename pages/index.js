@@ -1,8 +1,12 @@
 import TopSection from "../components/TopSection";
 import Link from "next/link";
+import { isMobile } from "../hooks/useDeviceDetect";
+import Mobile from "./mobile";
 
 export default function Home() {
-  return (
+  return isMobile ? (
+    <Mobile />
+  ) : (
     <div>
       <TopSection />
       <div
