@@ -11,4 +11,5 @@ export default function useDeviceDetect() {
   }, []);
 
   return { isMobile };
+  console.log(isMobile);
 }
