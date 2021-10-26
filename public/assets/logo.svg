@@ -1,0 +1,18 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+	<title>logo</title>
+	<defs>
+		<image  width="500" height="500" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0AQMAAADxGE3JAAAAAXNSR0IB2cksfwAAAANQTFRFAAAAp3o92gAAAAF0Uk5TAEDm2GYAAAA1SURBVHic7cExAQAAAMKg9U/tYQ2gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG59AAABhRLY9gAAAABJRU5ErkJggg=="/>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="10" y1="250" x2="490" y2="250">
+			<stop offset="0" stop-color="#60a5fa"  />
+			<stop offset="0.503" stop-color="#3b82f6"  />
+			<stop offset="1" stop-color="#2563eb"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: url(#grd1);stroke-width: 20 } 
+	</style>
+	<use id="Background" href="#img1" x="0" y="0" />
+	<path id="LXD" fill="#f1f5f9" aria-label="LXD"  d="M116.38 171.59L93.71 302.11L160.1 302.11L155.59 328L57.73 328L84.91 171.59L116.38 171.59ZM225.09 171.59L245.07 225.3L281.92 171.59L319.73 171.59L262.26 250.66L294.7 328L259.9 328L239.38 273.43L201.67 328L163.43 328L222.19 247.65L190.72 171.59L225.09 171.59ZM359.37 328L311.03 328L338.21 171.59L383.11 171.7Q398.9 172.02 411.47 178.9Q424.14 185.67 431.99 198.45Q439.83 211.23 441.44 227.24Q442.3 236.58 441.22 246.36L440.47 252.05Q435.75 286.43 413.4 307.27Q391.17 328 359.37 328ZM382.36 197.8L365.17 197.7L347.01 302.11L360.12 302.22Q381.82 302.22 394.92 286.32Q408.14 270.42 410.07 238.3L410.29 234.87Q410.61 217.14 403.52 207.69Q396.43 198.23 382.36 197.8Z" />
+	<path id="Shape 1" class="shp0" d="M250 490C117.28 490 10 382.72 10 250C10 117.28 117.28 10 250 10C382.72 10 490 117.28 490 250C490 382.72 382.72 490 250 490Z" />
+</svg>

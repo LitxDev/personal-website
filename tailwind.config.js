@@ -9,7 +9,7 @@ module.exports = {
       transparent: "transparent",
       background: colors.coolGray,
       foreground: colors.blueGray,
-      accent: colors.sky,
+      accent: colors.blue,
     },
   },
   variants: {
