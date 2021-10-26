@@ -1,9 +1,17 @@
 import TopSection from "../components/TopSection";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function AboutMe() {
   return (
     <div>
+      <Head>
+        <title>LitxDev | Home</title>
+        <meta
+          name="description"
+          content="The about me page where i tell stuff about myself"
+        ></meta>
+      </Head>
       <TopSection />
       <div
         data-aos="fade-in"
@@ -12,13 +20,17 @@ export default function AboutMe() {
         <p className="text-5xl leading-tight">
           I&apos;m a web developer and an indie game developer <br /> I use{" "}
           <Link href="https://godotengine.org/" passHref>
-            <a className="underline text-accent-500">Godot</a>
+            <a title="Godot homepage" className="underline text-accent-500">
+              Godot
+            </a>
           </Link>{" "}
           as my game engine
           <br />I like open-source and the Linux community <br /> one of my
           favorite programming languages is{" "}
           <Link href="https://rust-lang.org/" passHref>
-            <a className="underline text-accent-500">Rust</a>
+            <a title="Rust-Lang homepage" className="underline text-accent-500">
+              Rust
+            </a>
           </Link>{" "}
           <br />I like computers in general and exploring new things.
         </p>

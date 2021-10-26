@@ -1,5 +1,6 @@
 import TopSection from "../components/TopSection";
 import Link from "next/link";
+import Head from "next/head";
 import Mobile from "./mobile";
 import useDeviceDetect from "../hooks/useDeviceDetect";
 
@@ -9,6 +10,10 @@ export default function Home() {
     <Mobile />
   ) : (
     <div>
+      <Head>
+        <title>LitxDev | Home</title>
+        <meta name="description" content="The homepage"></meta>
+      </Head>
       <TopSection />
       <div
         data-aos="fade-in"
@@ -18,12 +23,17 @@ export default function Home() {
           I&apos;m a young web developer and indie game developer <br /> I
           mostly use{" "}
           <Link href="https://godotengine.org/" passHref>
-            <a className="underline text-accent-500">Godot</a>
+            <a title="Godot homepage" className="underline text-accent-500">
+              Godot
+            </a>
           </Link>{" "}
           for games <br /> and I like open-source and the Linux community.
         </p>
         <Link href="/about">
-          <a className="bg-accent-500 rounded-full shadow uppercase p-2 text-2xl hover:bg-accent-400 hover:shadow-xl transition-colors transition-shadow duration-200 ease-in-out">
+          <a
+            title="About me"
+            className="bg-accent-500 rounded-full shadow uppercase p-2 text-2xl hover:bg-accent-400 hover:shadow-xl transition-colors transition-shadow duration-200 ease-in-out"
+          >
             Learn more
           </a>
         </Link>

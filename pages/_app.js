@@ -6,8 +6,6 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import NextNProgress from "nextjs-progressbar";
 import { blue } from "tailwindcss/colors";
-import { isMobile } from "../hooks/useDeviceDetect";
-import Mobile from "./mobile";
 
 library.add(fab);
 
