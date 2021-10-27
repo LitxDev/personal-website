@@ -1,5 +1,6 @@
 import TopSection from "../components/TopSection";
 import Link from "next/link";
+import { NextSeo } from "next-seo";
 import Mobile from "./mobile";
 import useDeviceDetect from "../hooks/useDeviceDetect";
 
@@ -8,7 +9,9 @@ export default function Home() {
   return isMobile ? (
     <Mobile />
   ) : (
-    <div>
+    <>
+      <NextSeo title="LitxDev | Home" description="The homepage" />
+
       <TopSection />
       <div
         data-aos="fade-in"
@@ -28,6 +31,6 @@ export default function Home() {
           </a>
         </Link>
       </div>
-    </div>
+    </>
   );
 }

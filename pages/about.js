@@ -1,9 +1,14 @@
 import TopSection from "../components/TopSection";
 import Link from "next/link";
+import { NextSeo } from "next-seo";
 
 export default function AboutMe() {
   return (
-    <div>
+    <>
+      <NextSeo
+        title="LitxDev | About"
+        description="The about me page where you get to know me"
+      />
       <TopSection />
       <div
         data-aos="fade-in"
@@ -23,6 +28,6 @@ export default function AboutMe() {
           <br />I like computers in general and exploring new things.
         </p>
       </div>
-    </div>
+    </>
   );
 }

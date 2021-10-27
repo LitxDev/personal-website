@@ -1,8 +1,14 @@
 import TopSection from "../components/TopSection";
+import { NextSeo } from "next-seo";
 
 export default function Games() {
   return (
     <div>
+      <NextSeo
+        title="LitxDev | Games"
+        description="The games page where I share all my games"
+      />
+
       <TopSection />
 
       <div

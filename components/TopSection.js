@@ -36,24 +36,30 @@ export default function TopSection() {
       </ul>
 
       <ul className="flex space-x-14 text-4xl">
-        <Link href="https://github.com/LitxDev" passHref>
-          <FontAwesomeIcon
-            icon={["fab", "github"]}
-            className="cursor-pointer hover:text-accent-500 transition-colors duration-200 ease-in-out"
-          />
-        </Link>
-        <Link href="https://litxdev.itch.io" passHref>
-          <FontAwesomeIcon
-            icon={["fab", "itch-io"]}
-            className="cursor-pointer hover:text-accent-500 transition-colors duration-200 ease-in-out"
-          />
-        </Link>
-        <Link href="https://twitter.com/LitxDev" passHref>
-          <FontAwesomeIcon
-            icon={["fab", "twitter"]}
-            className="cursor-pointer hover:text-accent-500 transition-colors duration-200 ease-in-out"
-          />
-        </Link>
+        <li>
+          <Link href="https://github.com/LitxDev" passHref>
+            <FontAwesomeIcon
+              icon={["fab", "github"]}
+              className="cursor-pointer hover:text-accent-500 transition-colors duration-200 ease-in-out"
+            />
+          </Link>
+        </li>
+        <li>
+          <Link href="https://litxdev.itch.io" passHref>
+            <FontAwesomeIcon
+              icon={["fab", "itch-io"]}
+              className="cursor-pointer hover:text-accent-500 transition-colors duration-200 ease-in-out"
+            />
+          </Link>
+        </li>
+        <li>
+          <Link href="https://twitter.com/LitxDev" passHref>
+            <FontAwesomeIcon
+              icon={["fab", "twitter"]}
+              className="cursor-pointer hover:text-accent-500 transition-colors duration-200 ease-in-out"
+            />
+          </Link>
+        </li>
       </ul>
     </nav>
   );

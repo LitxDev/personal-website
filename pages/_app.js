@@ -5,9 +5,10 @@ import AOS from "aos";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import NextNProgress from "nextjs-progressbar";
+import SEO from "../next-seo.config";
+import { DefaultSeo } from "next-seo";
+
 import { blue } from "tailwindcss/colors";
-import { isMobile } from "../hooks/useDeviceDetect";
-import Mobile from "./mobile";
 
 library.add(fab);
 
@@ -24,6 +25,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
+      <DefaultSeo {...SEO} />
       <NextNProgress color={blue[500]} height={4} />
       <Component {...pageProps} />
     </>
