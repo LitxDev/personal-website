@@ -9,4 +9,10 @@
     @apply to-background-900;
     @apply h-full;
   }
+  .navbar-links {
+    display: none;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
 }

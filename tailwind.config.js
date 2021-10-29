@@ -4,11 +4,15 @@ module.exports = {
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: "media", // or 'media' or 'class'
   theme: {
-    extend: {
-      animation: {
-        "spin-fast": "spin 0.5s linear 1",
-      },
+    screens: {
+      xs: "320px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
     },
+    extend: {},
     colors: {
       transparent: "transparent",
       background: colors.coolGray,
@@ -21,9 +25,7 @@ module.exports = {
     },
   },
   variants: {
-    extend: {
-      animation: ["hover", "focus"],
-    },
+    extend: {},
   },
   plugins: [],
 }
