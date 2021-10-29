@@ -5,4 +5,4 @@ export default {
     url: "https://litxdev.vercel.app/",
     site_name: "litxdev",
   },
-};
+}
