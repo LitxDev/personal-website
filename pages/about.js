@@ -11,7 +11,7 @@ export default function AboutMe() {
         data-aos="fade-in"
         className="flex flex-col items-center font-lato text-center mt-96 text-foreground-100"
       >
-        <p className="leading-tight md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-7xl">
+        <p className="leading-tight text-2xl xs:text-xl md:text-3xl lg:text-4xl xl:text-5xl xxl:text-7xl">
           I&apos;m a web developer and an indie game developer <br /> I use{" "}
           <Link href="https://godotengine.org/" passHref>
             <a className="underline text-accent-500" target="_blank" rel="noopener">

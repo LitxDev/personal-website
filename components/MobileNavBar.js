@@ -8,7 +8,9 @@ export default function MobileNavBar() {
   const [icon, setIcon] = useState(["fas", "bars"])
   const [visibility, setVisibility] = useState("hidden")
   const [toggle, setToggle] = useState(false)
-  const onClick = () => {
+  const onClick = (e) => {
+    e.preventDefault()
+
     setToggle(!toggle)
 
     if (toggle === false) {
@@ -24,18 +26,16 @@ export default function MobileNavBar() {
       data-aos="fade-in-down"
       className="grid grid-cols-1 grid-rows-1 bg-background-800 p-2 space-y-8 xs:space-y-6 place-items-center text-center font-bold font-roboto text-foreground-100"
     >
-      <ul className="flex space-x-64 xs:space-x-56">
+      <ul className="flex flex-row space-x-64 items-center place-items-center xs:space-x-56 text-xl">
         <li>
           <Link href="/">
-            <a className="block w-10">
+            <a className="flex w-10">
               <Image src={logo} alt="LXD" />
             </a>
           </Link>
         </li>
         <li>
-          <button onClick={onClick}>
-            <FontAwesomeIcon icon={icon} className="w-10 h-10" />
-          </button>
+          <FontAwesomeIcon icon={icon} onClick={onClick} />
         </li>
       </ul>
 
